@@ -66,7 +66,27 @@ article > div {
   text-align: center;
 }
 
-article p {
-  background-color: bisque;
+article img {
+  border-radius: 50%;
+}
+
+article p { 
   width: 70%;
+}
+
+footer {
+  background-color: darkblue;
+  color: white;
+  padding: 25px;
+}
+
+footer p {
+  text-align: center;
+}
+
+.footerp1 {
+  margin: 5px;
+}
+.footerp2 {
+  font-size: small;
 }
