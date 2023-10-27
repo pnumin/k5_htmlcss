@@ -1,0 +1,29 @@
+section {
+  width: 80%;
+  padding: 20px;
+  border: 2px dotted rgb(171, 171, 171);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.btC {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cmsg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: blueviolet;
+  color: white;
+  font-weight: bold;
+  width: 50%;
+  height: 80px;
+  
+}
