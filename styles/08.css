@@ -28,4 +28,8 @@ h2, #btDiv {
   justify-content: center;
   align-items: center;
 }
- 
+
+p {
+  background-color: blue;
+  color: aliceblue;
+}
