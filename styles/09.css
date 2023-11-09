@@ -1,14 +1,16 @@
 #btDiv2 {
-  display: flex;
+  display: flex; 
   justify-content: center;
-  align-items: center;
+  align-items: center;  
+  width: 60%;
 }
+ 
 
 #txt {
   height: 40px;
-  margin-right: 10px;
+  margin-right: 10px; 
 }
 
 #bt {
-  width: 150px;
+  width: 150px; 
 }
