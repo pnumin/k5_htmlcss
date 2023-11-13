@@ -29,18 +29,26 @@
       <form>
         <div class='fdiv'>
           <div>
-            select
+            <select id='sel1' class='sel' name='sel1'>
+              <option value='℃' selected>섭씨온도(℃)</option>
+              <option value='℉'>화씨온도(℉)</option>
+            </select>
           </div>
           <div>
-            text
+            <input type='number' id='txt1' name='txt1'>
+            <span id='unit1'>℃</span>
           </div>
         </div>
         <div class='fdiv'>
           <div>
-            select
+            <select id='sel2' class='sel' name='sel2'>
+              <option value='℃'>섭씨온도(℃)</option>
+              <option value='℉' selected>화씨온도(℉)</option>
+            </select>
           </div>
           <div>
-            text
+            <input type='number' id='txt2' name='txt2' readonly>
+            <span id='unit2'>℉</span>
           </div>
         </div>
       </form>
