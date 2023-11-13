@@ -1,0 +1,23 @@
+#sec2 {
+  background-color:antiquewhite;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fdiv {
+  background-color: aqua;
+  width : 45%;
+  padding: 5px;
+}
+
+.fdiv > div {
+  margin: 2px;
+  background-color: blue;
+  margin: 10px;
+  padding: 10px;
+}
