@@ -22,7 +22,19 @@ document.addEventListener("DOMContentLoaded", ()=>{
   }) ;
 
   //숫자 합계
-  bt2.addEventListener("click", ()=>{
+  bt2.addEventListener("click", (e)=>{
+    e.preventDefault();
+    let sum = 0 ;
+
+    // for(let i=0; i< txt1.value.length ; i++) {
+    //   console.log(txt1.value[i])
+    // }
+
+    for (let c of txt1.value) {
+      if (!isNaN(c)) sum = sum + parseInt(c) ; 
+    }
+
+    txt2.value = sum ;
 
   }) ;
 }) ;
