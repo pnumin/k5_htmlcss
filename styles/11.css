@@ -20,7 +20,7 @@ form {
   margin: 10px;
 }
 
-.bt11 {
+.bt11, .bt12, .bt13 {
   width: 100%;
 }
 
@@ -36,4 +36,13 @@ input[type=text], #txt2 {
   width: 80%;
   height: 40px;
   text-align: center;
+}
+
+#txt1 {
+  width: 100%;
+  font-size: x-large;
+}
+
+#d1 {
+  width: 100%;
 }
