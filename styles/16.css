@@ -1,5 +1,6 @@
+
 form {
-  width: 100;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,6 +10,23 @@ form {
   width: 100%;
 }
 
+#d0 {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  
+  width: 100%;
+}
+.inDiv, fieldset {
+  width: 45%;
+}
+.inDiv {
+  padding-top: 10px;
+}
+fieldset {
+  text-align: center;
+  padding: 10px;
+}
 table {
   width: 100%;
 }
@@ -16,6 +34,10 @@ table {
 table, th, td {
   border: 1px solid gainsboro;
   border-collapse: collapse;
+}
+
+th, tr {
+  height: 30px;
 }
 
 th {
@@ -27,7 +49,17 @@ tr:nth-child(even) {
   background-color: gainsboro;
 }
 
-input {
+.sp1 {
+  text-align: center;
+}
+.sp2 {
+  text-align: left;
+}
+.sp3 {
+  text-align: right;
+}
+
+input[type=date] {
   display: inline-flex;
   height: 40px;
   width: 200px;
