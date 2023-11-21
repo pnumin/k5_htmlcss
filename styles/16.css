@@ -1,0 +1,36 @@
+form {
+  width: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fdiv {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid gainsboro;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: gray;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: gainsboro;
+}
+
+input {
+  display: inline-flex;
+  height: 40px;
+  width: 200px;
+  font-size: large;
+  font-weight: bold;
+}
