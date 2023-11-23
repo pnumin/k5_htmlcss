@@ -1,8 +1,11 @@
 //일일 박스 오피스 데이터 가져오기
-const getBoxOffice = (dt, tbDiv) => {
+const getBoxOffice = (dt, tbDiv, gubun) => {
   let apikey = "f5eef3421c602c6cb7ea224104795888" ;
    
   let url = `https://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=${apikey}&targetDt=${dt}` ;
+  if (gubun == '2') url = url + `&multiMovieYn=Y` ;
+  else if (gubun == '3') url = url + `&multiMovieYn=N` ;
+
   let boxList ;
   tbDiv.innerHTML = '' ;
   let tags = `
@@ -42,7 +45,7 @@ const getBoxOffice = (dt, tbDiv) => {
      );
     
     trs = trs.join('') ;
-    
+
     tags = tags + trs + `</table>` ;
     tbDiv.innerHTML = tags ;
     console.log(boxList)
@@ -51,21 +54,23 @@ const getBoxOffice = (dt, tbDiv) => {
 }
  
 document.addEventListener("DOMContentLoaded", ()=>{
-  //날짜 input 가져오기
-  const inputDt = document.querySelector("#dt") ;
   const tbDiv = document.querySelector("#tbDiv") ;
+  const bt = document.querySelector("#bt")
 
-  //날짜변경 처리
-  inputDt.addEventListener("change", (e)=>{
-    // console.log(inputDt.value)
-    //console.log(e.target.value) ;
+  //조회버튼
+  bt.addEventListener("click", (e)=>{
+    e.preventDefault() ;
+    
+    //날짜 input 가져오기
+    const dt = inform.dt.value.replaceAll('-', '') ;
+    const gubun = inform.gubun.value  ;
 
-    // yyyymmdd 형식으로 변경 
-    const dt = e.target.value.replaceAll('-', '') ;
-    //console.log(dt)
+    if (dt === '' || dt === undefined) {
+      alert('날짜를 선택해 주세요.') ;
+      return ;
+    }
 
-    // 해당하는 날짜 조회
-    getBoxOffice(dt, tbDiv);
+    getBoxOffice(dt, tbDiv, gubun) ;
   }) ;
   
   
